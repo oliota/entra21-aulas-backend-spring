@@ -77,7 +77,7 @@ public class ProgramadorController {
 		 
 		Programador atual = programadorRepository.findById(id).get();
 		atual.setNome(programadorEditado.getNome());
-		atual.setQtdLinguagem(programadorEditado.getQtdLinguagem());
+		atual.setQtdLing(programadorEditado.getQtdLing());
 		programadorRepository.save(atual);
 
 		return programadorRepository.findById(id);

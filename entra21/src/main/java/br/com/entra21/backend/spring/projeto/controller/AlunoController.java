@@ -30,7 +30,7 @@ import br.com.entra21.backend.spring.projeto.repository.IAlunoRepository;
 @RequestMapping("/alunos")
 public class AlunoController {
 
-	private final String PATH = "localhost:8080/alunos";
+	
 
 	@Autowired
 	private IAlunoRepository alunoRepository;
@@ -88,7 +88,7 @@ public class AlunoController {
 	}
 
 	private void setMaturidadeNivel3(Aluno aluno) {
-
+		final String PATH = "localhost:8080/alunos";
 		ArrayList<String> headers = new ArrayList<String>();
 		headers.add("Accept : application/json");
 		headers.add("Content-type : application/json");
